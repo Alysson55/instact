@@ -1,9 +1,9 @@
 @extends('layouts.app')
-
+ 
 @section('content')
     <div class="min-vh-100 d-flex justify-content-center align-items-center">
- 
         <form action="/signup" method="POST" style="width:400px">
+            @csrf
  
             <h1>Cadastro</h1>
  
@@ -13,8 +13,6 @@
  
             <button class="btn btn-outline-primary w-100 mb-3" type="submit">Enviar</button>
             <a href="/" class="link-secondary">Login</a>
- 
         </form>
- 
     </div>
 @endsection
